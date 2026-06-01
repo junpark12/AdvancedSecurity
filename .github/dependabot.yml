@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"          # 패키지 생태계 (pip, npm, maven, gomod 등)
+    directory: "/authn-service"       # 매니페스트 파일이 있는 경로
+    schedule:
+      interval: "daily"               # 업데이트 확인 주기 (daily/weekly/monthly)
+    commit-message:
+      prefix: "pip"                   # 커밋 메시지 접두사
+    assignees:
+      - "your-github-handle"          # PR 담당자
+    reviewers:
+      - "reviewer-github-handle"      # PR 리뷰어
+    labels:
+      - "triage-required"             # PR에 붙일 라벨
